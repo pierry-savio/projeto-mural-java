@@ -23,7 +23,7 @@ public class RecadoDAO {
 
 
     public List<Recado> listar() throws SQLException {
-        String sql = "SELECT id, autor, mensagem FROM recado ORDER BY DESC";
+        String sql = "SELECT id, autor, mensagem FROM recado ORDER BY id DESC";
         List<Recado> recados = new ArrayList<>();
 
         try (Connection connection = Conexao.abrir();
